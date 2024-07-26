@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from "@/components/ui/button"
-
+import HeaderMenuItems from '@/components/custom/header/HeaderMenuItems'
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
             Credit Samdhan
         </div>
         <div className="">
-            test
+            <HeaderMenuItems/>
         </div>
         <div className="">
             <Button>Get A Loan</Button>
