@@ -24,14 +24,14 @@ const mainMenuItems: { title: string; href: string }[] = [
     {
       title: "Loan Consulting",
       href: "/docs/primitives/alert-dialog",
+    },  
+    {
+      title: "Membership cards",
+      href: "/docs/primitives/alert-dialog",
     },
     {
-      title: "Membership Cards",
+      title: "Credit building subscription",
       href: "/docs/primitives/hover-card",
-    },
-    {
-      title: "Credit Buiding Subscription",
-      href: "/docs/primitives/tooltip",
     },
     {
       title: "Channel Partners",
@@ -42,21 +42,25 @@ const mainMenuItems: { title: string; href: string }[] = [
 
   const otherLinks: { title: string; href: string }[] = [
     {
-      title: "Loan Consulting",
+      title: "Home",
       href: "/docs/primitives/alert-dialog",
     },
     {
-      title: "Membership Cards",
+      title: "About",
       href: "/docs/primitives/hover-card",
     },
     {
-      title: "Credit Buiding Subscription",
+      title: "Contact",
       href: "/docs/primitives/tooltip",
     },
     {
-      title: "Channel Partners",
+      title: "T&C",
       href: "/docs/primitives/tooltip",
-    },  
+    },
+    {
+      title: "Privacy Policy",
+      href: "/docs/primitives/tooltip",
+    },      
   ]
 
 
@@ -94,16 +98,16 @@ const Footer = () => {
         <div className="flex flex-row mb-8">
           {mainMenuItems.map((menuItem) => (
             <Link href={menuItem.href} className="mr-6 flex flex-row">
-                <p className="text-lg font-semibold">test</p><Separator orientation="vertical" className="ml-6"/>
+                <p className="text-lg font-semibold">{menuItem.title}</p><Separator orientation="vertical" className="ml-6"/>
             </Link>
           ))}
         </div>
 
 
         <div className="flex flex-row">
-          {mainMenuItems.map((menuItem) => (
-            <Link href={menuItem.href} className="mr-6 flex flex-row">
-                <p className="text-slate-700">test</p><Separator orientation="vertical" className="ml-6"/>
+          {otherLinks.map((otherLink) => (
+            <Link href={otherLink.href} className="mr-6 flex flex-row">
+                <p className="text-slate-700">{otherLink.title}</p><Separator orientation="vertical" className="ml-6"/>
             </Link>
           ))}
         </div>
