@@ -2,15 +2,17 @@ import React from 'react'
 import { Button } from "@/components/ui/button"
 import HeaderMenuItems from '@/components/custom/Header/HeaderMenuItems'
 import Image from 'next/image'
-
+import Link from 'next/link'
 
 const Header = () => {
   return (
     <div className="min-h-[80px] flex flex-row justify-between mx-auto px-8 py-4 sticky top-0 bg-white shadow">
+        <Link href="/">
         <div className="flex flex-row gap-2 py-auto text-lg font-semibold xl:min-w-[300px]">
             <Image src="/logo.png" alt="Logo" width="50" height="2" className="object-contain"/>
             <p className="flex mt-2">Credit Samdhan</p>
         </div>
+        </Link>
         <div className="">
             <HeaderMenuItems/>
         </div>

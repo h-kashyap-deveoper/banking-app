@@ -4,17 +4,17 @@ import { Separator } from "@/components/ui/separator"
 import Link from 'next/link'
 
 
-const socialLinks: { title: string; href: string }[] = [
+const socialLinks: { image: string; href: string }[] = [
   {
-    title: "Loan Consulting",
+    image: "/images/facebook.png",
     href: "/docs/primitives/alert-dialog",
   },
   {
-    title: "Membership Cards",
+    image: "Membership Cards",
     href: "/docs/primitives/hover-card",
   },
   {
-    title: "Credit Buiding Subscription",
+    image: "Credit Buiding Subscription",
     href: "/docs/primitives/tooltip",
   },
 ]
@@ -78,8 +78,8 @@ const Footer = () => {
 
 
 
-            {mainMenuItems.map((menuItem) => (
-                <Link href={menuItem.href} className="ml-2 flex align-middle justify-center max-h-6">
+            {socialLinks.map((socialItem) => (
+                <Link href={socialItem.href} className="ml-2 flex align-middle justify-center max-h-6">
 
                     test
 
