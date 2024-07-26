@@ -19,6 +19,8 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
+import { Textarea } from "@/components/ui/textarea"
+
 export default function ContactForm() {
   return (
     <Card className="w-[550px]">
@@ -65,11 +67,22 @@ export default function ContactForm() {
                 </SelectContent>
               </Select>
             </div>
+
+
+
+
+            <div className="flex flex-col space-y-1.5">
+                <Label htmlFor="message">Message</Label>
+                <Textarea id="message" />
+            </div>
+
+
+
+
           </div>
         </form>
       </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
+      <CardFooter>
         <Button>Deploy</Button>
       </CardFooter>
     </Card>
