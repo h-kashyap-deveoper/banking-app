@@ -6,17 +6,21 @@ import Link from 'next/link'
 
 const socialLinks: { image: string; href: string }[] = [
   {
-    image: "/images/facebook.png",
-    href: "/docs/primitives/alert-dialog",
+    image: "/facebook.png",
+    href: "/",
   },
   {
-    image: "Membership Cards",
-    href: "/docs/primitives/hover-card",
+    image: "/instagram.png",
+    href: "/",
   },
   {
-    image: "Credit Buiding Subscription",
-    href: "/docs/primitives/tooltip",
+    image: "/linkedin.png",
+    href: "/",
   },
+  {
+    image: "/x.png",
+    href: "/",
+  },  
 ]
 
 
@@ -79,10 +83,8 @@ const Footer = () => {
 
 
             {socialLinks.map((socialItem) => (
-                <Link href={socialItem.href} className="ml-2 flex align-middle justify-center max-h-6">
-
-                    test
-
+                <Link href={socialItem.href} className="">
+                    <Image src={socialItem.image} alt="Social Icon" width="40" height="40"/>
                 </Link>
               ))}
 
