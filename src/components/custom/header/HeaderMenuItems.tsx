@@ -18,25 +18,25 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Loan Consulting",
-    href: "/docs/primitives/alert-dialog",
+    href: "/loan-consulting",
     description:
       "Get the best in class consultation from Credit Samdhan experts!",
   },
   {
     title: "Membership Cards",
-    href: "/docs/primitives/hover-card",
+    href: "/membership-cards",
     description:
       "Membership cards boost your loan amount",
   },
   {
     title: "Credit Buiding Subscription",
-    href: "/docs/primitives/tooltip",
+    href: "/credit-building",
     description:
       "We help you build a great credit score to get better loans.",
   },
   {
     title: "Channel Partners",
-    href: "/docs/primitives/tooltip",
+    href: "/channel-partners",
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },  
@@ -58,7 +58,7 @@ export default function NavigationMenuDemo() {
 
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -108,9 +108,9 @@ export default function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              Contact
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
