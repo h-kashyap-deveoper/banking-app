@@ -20,19 +20,19 @@ const components: { title: string; href: string; description: string }[] = [
     title: "Loan Consulting",
     href: "/docs/primitives/alert-dialog",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Get the best in class consultation from Credit Samdhan experts!",
   },
   {
     title: "Membership Cards",
     href: "/docs/primitives/hover-card",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Membership cards boost your loan amount",
   },
   {
     title: "Credit Buiding Subscription",
     href: "/docs/primitives/tooltip",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "We help you build a great credit score to get better loans.",
   },
   {
     title: "Channel Partners",
@@ -83,7 +83,7 @@ export default function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[100px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
