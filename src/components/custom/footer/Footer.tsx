@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="flex flex-row mb-8">
           {mainMenuItems.map((menuItem) => (
             <Link href={menuItem.href} className="mr-6 flex flex-row">
-                <p className="text-lg font-semibold">{menuItem.title}</p><Separator orientation="vertical" className="ml-6"/>
+                <p className=" font-semibold">{menuItem.title}</p><Separator orientation="vertical" className="ml-6"/>
             </Link>
           ))}
         </div>
