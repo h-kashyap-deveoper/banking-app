@@ -24,14 +24,14 @@ const LoginSignUpTab = () => {
     <div>
 
         <Tabs defaultValue="account" className="w-[400px]">
-        <TabsList className="grid w-full grid-cols-2">
+        <TabsList className="">
             <TabsTrigger value="account">Login</TabsTrigger>
             <TabsTrigger value="password">Signup</TabsTrigger>
         </TabsList>
         <TabsContent value="account">
             <Card>
             <CardHeader>
-                <CardTitle>Account</CardTitle>
+                <CardTitle>Login</CardTitle>
                 <CardDescription>
                 Make changes to your account here. Click save when you're done.
                 </CardDescription>
@@ -54,7 +54,7 @@ const LoginSignUpTab = () => {
         <TabsContent value="password">
             <Card>
             <CardHeader>
-                <CardTitle>Password</CardTitle>
+                <CardTitle>Signup</CardTitle>
                 <CardDescription>
                 Change your password here. After saving, you'll be logged out.
                 </CardDescription>

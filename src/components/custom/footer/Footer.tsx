@@ -3,6 +3,23 @@ import Image from 'next/image'
 import { Separator } from "@/components/ui/separator"
 import Link from 'next/link'
 
+
+const socialLinks: { title: string; href: string }[] = [
+  {
+    title: "Loan Consulting",
+    href: "/docs/primitives/alert-dialog",
+  },
+  {
+    title: "Membership Cards",
+    href: "/docs/primitives/hover-card",
+  },
+  {
+    title: "Credit Buiding Subscription",
+    href: "/docs/primitives/tooltip",
+  },
+]
+
+
 const mainMenuItems: { title: string; href: string }[] = [
     {
       title: "Loan Consulting",
@@ -21,12 +38,35 @@ const mainMenuItems: { title: string; href: string }[] = [
       href: "/docs/primitives/tooltip",
     },  
   ]
+
+
+  const otherLinks: { title: string; href: string }[] = [
+    {
+      title: "Loan Consulting",
+      href: "/docs/primitives/alert-dialog",
+    },
+    {
+      title: "Membership Cards",
+      href: "/docs/primitives/hover-card",
+    },
+    {
+      title: "Credit Buiding Subscription",
+      href: "/docs/primitives/tooltip",
+    },
+    {
+      title: "Channel Partners",
+      href: "/docs/primitives/tooltip",
+    },  
+  ]
+
+
+
   
 
 
 const Footer = () => {
   return (
-    <div className="bg-slate-100 flex flex-col justify-between mx-auto px-8 py-16 sticky top-0">
+    <div className="bg-slate-100 flex flex-col justify-between mx-auto px-8 py-[80px]">
         <div className="flex justify-between align-middle flex-row gap-4 mb-8">
           <Image src="/logo.png" alt="Logo" height="40" width="100"/>
           <div className="flex justify-center align-middle m-0 p-0">
@@ -48,8 +88,29 @@ const Footer = () => {
         </div>
         <Separator className="mb-8"/>
 
-        <div className="">
-testst
+        <div className="flex flex-col">
+
+
+        <div className="flex flex-row mb-8">
+          {mainMenuItems.map((menuItem) => (
+            <Link href={menuItem.href} className="mr-6 flex flex-row">
+                <p className="text-lg font-semibold">test</p><Separator orientation="vertical" className="ml-6"/>
+            </Link>
+          ))}
+        </div>
+
+
+        <div className="flex flex-row">
+          {mainMenuItems.map((menuItem) => (
+            <Link href={menuItem.href} className="mr-6 flex flex-row">
+                <p className="text-slate-700">test</p><Separator orientation="vertical" className="ml-6"/>
+            </Link>
+          ))}
+        </div>
+
+
+
+
         </div>
 
     </div>
