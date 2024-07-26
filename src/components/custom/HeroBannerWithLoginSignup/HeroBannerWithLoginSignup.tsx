@@ -10,7 +10,7 @@ const HeroBannerWithLoginSignup = () => {
                 <p className="capitalize max-w-[400px]">Optimize & streamline your finances with beneficial subscription plans.</p>
                 <Button className="max-w-min">Apply Now</Button>
         </div>
-        <div className="flex align-center flex-col gap-4">
+        <div className="flex align-center justify-center flex-col gap-4">
             <LoginSignUpTab/>
         </div>
     </div>
