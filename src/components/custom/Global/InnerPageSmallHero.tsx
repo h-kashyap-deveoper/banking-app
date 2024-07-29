@@ -1,7 +1,8 @@
 import { Button } from '@/components/ui/button';
 import React from 'react'
 
-const InnerPageSmallHero = (props) => {
+
+function InnerPageSmallHero(props){
 
   let test;
   if(props.shortDesc.length>0) {
