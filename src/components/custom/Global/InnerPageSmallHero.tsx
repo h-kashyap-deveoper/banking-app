@@ -9,6 +9,7 @@ function InnerPageSmallHero(props){
     test = props.shortDesc;
   }
 
+  
 
   return (
     <>
